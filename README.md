@@ -1,5 +1,4 @@
 # Bakend-proyectofinal
-# API REST con Autenticación - Express.js
 
 ## 📝 Descripción
 Proyecto de desarrollo backend que implementa un sistema de autenticación y registro de usuarios utilizando Express.js. El sistema permite a los usuarios registrarse, iniciar sesión y acceder a rutas protegidas sin utilizar una base de datos.
