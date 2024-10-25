@@ -76,75 +76,7 @@ Authorization: Bearer <token>
 - Middleware de autenticación
 - Almacenamiento en memoria (sin base de datos)
 
-## 🚀 Instrucciones de Instalación
 
-1. Clonar el repositorio
-```bash
-git clone 
-```
-
-2. Instalar dependencias
-```bash
-npm install
-```
-
-3. Crear archivo .env
-```env
-PORT=3000
-JWT_SECRET=tu_clave_secreta
-```
-
-4. Iniciar el servidor
-```bash
-npm start
-```
-
-## ✅ Criterios de Evaluación
-
-|
- Criterio 
-|
- Puntuación 
-|
-|
-----------
-|
-------------
-|
-|
- Implementación del registro 
-|
- 1.0 
-|
-|
- Implementación del login 
-|
- 1.0 
-|
-|
- Protección de rutas y JWT 
-|
- 1.0 
-|
-|
- Validaciones y manejo de errores 
-|
- 1.0 
-|
-|
- Buenas prácticas 
-|
- 1.0 
-|
-|
-**
-Total
-**
-|
-**
-5.0
-**
-|
 
 ## 🔒 Requisitos de Seguridad
 - Validación de usuarios duplicados
@@ -153,7 +85,7 @@ Total
 - Validación de tokens en rutas protegidas
 - Manejo seguro de errores
 
-## 📚 Estructura del Proyecto Sugerida
+## 📚 Estructura del Proyecto 
 ```
 ├── node_modules/
 ├── src/
@@ -170,41 +102,3 @@ Total
 ├── package.json
 └── README.md
 ```
-
-## 🧪 Pruebas Sugeridas
-
-### Registro de Usuario
-```bash
-curl -X POST http://localhost:3000/register \
--H "Content-Type: application/json" \
--d '{
-    "username": "estudiante1",
-    "lastName": "Apellido",
-    "email": "estudiante@universidad.edu",
-    "universityId": "12345",
-    "phone": "1234567890",
-    "password": "123456"
-}'
-```
-
-### Inicio de Sesión
-```bash
-curl -X POST http://localhost:3000/login \
--H "Content-Type: application/json" \
--d '{
-    "username": "estudiante1",
-    "password": "123456"
-}'
-```
-
-## 📝 Notas Adicionales
-- El sistema debe manejar errores de manera apropiada
-- Implementar validaciones para todos los campos
-- Documentar cualquier decisión de diseño importante
-- Seguir las mejores prácticas de seguridad
-
-## 🔗 Recursos Útiles
-- [Express.js Documentation](https://expressjs.com/)
-- [JWT.io](https://jwt.io/)
-- [bcrypt Documentation](https://github.com/kelektiv/node.bcrypt.js)
-- [Express Validator](https://express-validator.github.io/)
