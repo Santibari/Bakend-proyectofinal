@@ -21,7 +21,7 @@ app.use('/user', userRoutes);  // Rutas de usuario bajo /user
 
 // Ruta para la raíz (/), para que no se produzca el error "Cannot GET /"
 app.get('/', (req, res) => {
-    res.send('Bienvenido a la API');
+    res.send('Bienvenido');
 });
 
 // Obtener el puerto desde las variables de entorno, o usar el 3000 para local
